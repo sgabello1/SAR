@@ -1,0 +1,10 @@
+
+roslaunch bluefox2 single_node.launch device:=29900485
+
+--or
+sudo chmod 777 /dev/bus/usb/003/013
+roslaunch firefly_pgr/launch/firefly_pgr.launch
+
+rosrun image_proc image_proc /image_raw:=/camera/image_raw /camera_info:=/camera/camera_info
+
+rosrun spatially_ar sar_ros
