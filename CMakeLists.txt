@@ -26,8 +26,8 @@ add_definitions(${PCL_DEFINITIONS})
 add_executable(laser_calibration src/laser_calibration.cpp)
 target_link_libraries(laser_calibration  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
-add_executable(sar src/sar.cpp)
-target_link_libraries(sar  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+add_executable(sar_chessboard3 src/sar_chessboard3.cpp)
+target_link_libraries(sar_chessboard3  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(sar_ros src/sar_ros.cpp)
 target_link_libraries(sar_ros  ${catkin_LIBRARIES} ${PCL_LIBRARIES})

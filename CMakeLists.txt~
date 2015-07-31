@@ -24,7 +24,7 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
 add_executable(laser_calibration src/laser_calibration.cpp)
-target_link_libraries(icgdemo  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(laser_calibration  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(sar src/sar.cpp)
 target_link_libraries(sar  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
